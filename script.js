@@ -42,7 +42,35 @@ const daftarBenda = [
     { nama: "RADIO", emoji: "📻" }, { nama: "KUNCI", emoji: "🔑" }, { nama: "PALU", emoji: "🔨" },
     { nama: "OBENG", emoji: "🪛" }, { nama: "PACUL", emoji: "⛏️" }, { nama: "SENTER", emoji: "🔦" },
     { nama: "BOTOL", emoji: "🍼" }, { nama: "SENDOK", emoji: "🥄" }, { nama: "GARPU", emoji: "🍴" },
-    { nama: "GELAS", emoji: "🥛" }, { nama: "PIRING", emoji: "🍽️" }
+    { nama: "GELAS", emoji: "🥛" }, { nama: "PIRING", emoji: "🍽️" },
+
+    // ALAT MUSIK (15)
+    { nama: "GITAR", emoji: "🎸" }, { nama: "BIOLA", emoji: "🎻" }, { nama: "DRUM", emoji: "🥁" },
+    { nama: "PIANO", emoji: "🎹" }, { nama: "TEROMPET", emoji: "🎺" }, { nama: "SAKSOFON", emoji: "🎷" },
+    { nama: "AKORDEON", emoji: "🪗" }, { nama: "HARPA", emoji: "Strings" }, { nama: "BANJO", emoji: "🪕" },
+    { nama: "SULING", emoji: "🪈" }, { nama: "LONCENG", emoji: "🔔" }, { nama: "REBANA", emoji: "🪘" },
+    { nama: "MIKROFON", emoji: "🎤" }, { nama: "RADIO", emoji: "📻" }, { nama: "HEADPHONE", emoji: "🎧" },
+
+    // CUACA & ALAM (20)
+    { nama: "HUJAN", emoji: "🌧️" }, { nama: "PETIR", emoji: "⚡" }, { nama: "SALJU", emoji: "❄️" },
+    { nama: "ANGIN", emoji: "🌬️" }, { nama: "PELANGI", emoji: "🌈" }, { nama: "GUNUNG", emoji: "⛰️" },
+    { nama: "PANTAI", emoji: "🏖️" }, { nama: "PULAU", emoji: "🏝️" }, { nama: "GURUN", emoji: "🌵" },
+    { nama: "SUNGAI", emoji: "🏞️" }, { nama: "OMBAK", emoji: "🌊" }, { nama: "API", emoji: "🔥" },
+    { nama: "AIR", emoji: "💧" }, { nama: "BATU", emoji: "🪨" }, { nama: "BUMI", emoji: "🌍" },
+    { nama: "BULAN", emoji: "🌙" }, { nama: "BINTANG", emoji: "⭐" }, { nama: "PLANET", emoji: "🪐" },
+    { nama: "METEOR", emoji: "☄️" }, { nama: "KAKTUS", emoji: "🌵" },
+
+    // BENDA DI RUMAH (30)
+    { nama: "KURSI", emoji: "🪑" }, { nama: "MEJA", emoji: "🛋️" }, { nama: "PINTU", emoji: "🚪" },
+    { nama: "JENDELA", emoji: "🪟" }, { nama: "TEMPAT TIDUR", emoji: "🛏️" }, { nama: "LAMPU", emoji: "💡" },
+    { nama: "CERMIN", emoji: "🪞" }, { nama: "TV", emoji: "📺" }, { nama: "KULKAS", emoji: "🧊" },
+    { nama: "TELEPON", emoji: "☎️" }, { nama: "SABUN", emoji: "🧼" }, { nama: "HANDUK", emoji: "🧖" },
+    { nama: "GUNTING", emoji: "✂️" }, { nama: "PALU", emoji: "🔨" }, { nama: "KUNCI", emoji: "🔑" },
+    { nama: "PAYUNG", emoji: "☂️" }, { nama: "SENTER", emoji: "🔦" }, { nama: "KOMPOR", emoji: "🔥" },
+    { nama: "BOTOL", emoji: "🍼" }, { nama: "GELAS", emoji: "🥛" }, { nama: "PIRING", emoji: "🍽️" },
+    { nama: "SENDOK", emoji: "🥄" }, { nama: "GARPU", emoji: "🍴" }, { nama: "PISAU", emoji: "🔪" },
+    { nama: "TAS", emoji: "🎒" }, { nama: "DOMPET", emoji: "👛" }, { nama: "JAM", emoji: "⏰" },
+    { nama: "KADO", emoji: "🎁" }, { nama: "LILIN", emoji: "🕯️" }, { nama: "SAPU", emoji: "🧹" }
 ];
 
 let targetKata = "";
