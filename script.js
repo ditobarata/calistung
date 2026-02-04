@@ -80,6 +80,7 @@ const emojiDisplay = document.getElementById("emoji-display");
 const wordDisplay = document.getElementById("word-display");
 const hiddenInput = document.getElementById("hidden-input");
 const nextBtn = document.getElementById("next-btn");
+let animationTimeout;
 
 function mulaiGame() {
     // Reset data
@@ -109,19 +110,26 @@ function perbaruiTampilan() {
 
     // Jika menang
     if (!teks.includes("_")) {
-        wordDisplay.style.color = "#4CAF50";
+        wordDisplay.style.color = "#00C853"; /* Hijau cerah saat menang */
         nextBtn.style.display = "inline-block";
         animasikanEmoji('pulse'); // Animasi saat menang
     } else {
-        wordDisplay.style.color = "#4A4A4A";
+        wordDisplay.style.color = "#6A1B9A"; /* Ungu ceria saat bermain */
     }
 }
 
 function animasikanEmoji(animasiKelas) {
-    emojiDisplay.classList.remove('emoji-bounce', 'emoji-pulse'); // Hapus animasi sebelumnya
+    clearTimeout(animationTimeout);
+    emojiDisplay.classList.remove('emoji-bounce', 'emoji-pulse', 'emoji-idle'); // Hapus animasi sebelumnya
     // Paksa reflow agar animasi bisa diulang
     void emojiDisplay.offsetWidth; 
     emojiDisplay.classList.add(animasiKelas);
+
+    // Kembali ke animasi santai (idle) setelah animasi reaksi selesai
+    animationTimeout = setTimeout(() => {
+        emojiDisplay.classList.remove(animasiKelas);
+        emojiDisplay.classList.add('emoji-idle');
+    }, 600);
 }
 
 

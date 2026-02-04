@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial Rounded MT Bold', sans-serif;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-color: #f6d365;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,8 @@ body {
     padding: 20px;
     border-radius: 30px;
     text-align: center;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    border: 5px solid #FF9800;
 }
 
 #emoji-display {
@@ -49,6 +50,16 @@ body {
 .emoji-pulse {
     animation: pulse 0.6s ease-out; /* Durasi dan timing */
 }
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.emoji-idle {
+    animation: float 3s ease-in-out infinite;
+}
 /* --- Akhir Animasi Emoji --- */
 
 
@@ -56,7 +67,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: 8px;
     font-weight: bold;
-    color: #4A4A4A;
+    color: #6A1B9A;
     margin-bottom: 20px;
     min-height: 60px;
 }
@@ -74,14 +85,14 @@ body {
 }
 
 #next-btn {
-    background: #4CAF50;
+    background: #FF4081;
     color: white;
     border: none;
     padding: 15px 25px;
     font-size: 1.2rem;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 5px 0 #388E3C;
+    box-shadow: 0 5px 0 #C2185B;
 }
 
-#next-btn:active { transform: translateY(3px); box-shadow: none; }
+#next-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 #C2185B; }
